@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 
-import heroLogo from "@public/images/udh_logo_clean.png";
+import heroLogo from "@public/images/rose.png";
 import { NavButton } from "./navButton";
 import { Icon, IconProps } from "../icon";
 import { colors } from "@/utils/colors";
@@ -11,7 +11,7 @@ const navLinks = [
   { label: "Opening Hours", href: "#opening", lucide_id: "bug" },
   { label: "After Care", href: "#after", lucide_id: "target" },
   { label: "Social Media", href: "#social", lucide_id: "banana" },
-  { label: "Contact", href: "#contact", lucide_id: "user-plus" },
+  { label: "Contact", href: "#contact", lucide_id: "phone" },
 ];
 export const Hero = () => {
   return (
