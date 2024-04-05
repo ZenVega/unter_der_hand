@@ -33,4 +33,8 @@ The Icons come from [lucide](https://lucide.dev/icons/target)
 ## Contribute
 We want to work with standardized commit messages -> [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) check their docs / and older commit messages
 
-If you want to add to the code, please create a new branch for your changes. When you are ready to submit, start a PR and assign a reviewer. Only approved commit should be merged.
+If you want to add to the code, please create a new branch for your changes. When you are ready to submit, start a Pull Request and assign a reviewer. Only approved commit should be merged.
+
+When your changes correspond to an existing issue, Mention it's ID in the Title of the PR so it get's linked.
+
+e.G. 'Fix page not responsive #12' where #12 is the ID of the corresponing Issue
