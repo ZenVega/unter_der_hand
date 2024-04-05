@@ -31,6 +31,6 @@ For the styling we use Tailwind CSS. More infos [here](https://tailwindcss.com/)
 The Icons come from [lucide](https://lucide.dev/icons/target)
 
 ## Contribute
-We want to work with standardized commit messages -> [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) check their docs / and older comit messages
+We want to work with standardized commit messages -> [conventional commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) check their docs / and older commit messages
 
 If you want to add to the code, please create a new branch for your changes. When you are ready to submit, start a PR and assign a reviewer. Only approved commit should be merged.
