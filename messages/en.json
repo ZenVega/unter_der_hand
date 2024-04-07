@@ -1,5 +1,29 @@
 {
-  "Index": {
-    "title": "Hello world!"
+  "Hero": {
+    "welcome": "WALK INS WELCOME !"
+  },
+  "After": {
+    "title": "After Care",
+    "second_skin": {
+      "title": "Second Skin",
+      "description": "Second Skin is a breathable patch and especially user-friendly. You do not need to do anything more than leave the patch on the tattoo for 3-4 days. You can even take a shower with it without it coming off. (Attention: too long and too hot shower or bath could loosen the patch).<br/> It is normal that color and wound water collect under the patch in bubbles, do not panic, they disappear by themselves.<br/> On the fourth day you should pull off your second skin. This is often quite difficult and can be a bit uncomfortable.<br/> After that, you only need to occasionally apply a care cream of your choice. The rule here is: less is more. Use the cream only as a support against the tension and itching of the skin. After 2-3 weeks everything is over. You should avoid sports, sauna or swimming pool for at least one week."
+    },
+    "cling_film": {
+      "title": "Cling Film",
+      "description": "Especially large tattoos often can not be supplied with Second Skin. In this case, your tattoo is covered with cling film. Leave it on until the evening. If you had an appointment in the afternoon, you can leave the first foil directly on it overnight. At the latest the next morning after your appointment you have to change the foil. Unpack the tattoo and wash it thoroughly, even soap may be used. Then leave the tattoo in the air for a while. Before you get dressed again you have to put a new layer of cling film over it.<br/> Repeat this procedure in the morning and evening for the next 3-4 days. After that, you only need to occasionally apply a care cream of your choice. The rule here is: less is more. Use the cream only as a support against the tension and itching of the skin. After 2-3 weeks everything is over. You should avoid sports, sauna or swimming pool for at least one week."
+    }
+  },
+  "Contact": {
+    "title": "Contact",
+    "address": "Address",
+    "phone": "phone",
+    "email": "email"
+  },
+  "Info": {
+    "disclaimer": "Often longer, sometimes shorter. Please call before you come by.",
+    "opening_hours": "Opening Hours",
+    "opening_times": "Mo - Sa 12am - 8pm",
+    "title": "Info",
+    "social": "Social Media"
   }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslations } from "next-intl";
 import { Icon, IconProps } from "../icon";
 import { colors } from "@/utils/colors";
 
@@ -18,12 +18,17 @@ const sozialLinks: {
     lucide_id: "instagram",
   },
 ];
-export const SocialSection = () => {
+
+export const InfoSection = () => {
+  const t = useTranslations("Info");
   return (
-    <section id="social">
-      <div>
-        <h2 className="font-bold text-udh_yellow">Social Media</h2>
-        <ul className="flex justify-center gap-6 mt-4">
+    <section id="opening" className="w-full max-w-3xl">
+      <div className="bg-udh_yellow text-udh_dark_green p-4 sm:p-8 w-full">
+        <h2 className="font-bold">{t("opening_hours")}</h2>
+        <p>{t("opening_times")}</p>
+        <p>{t("disclaimer")}</p>
+        <h2 className="font-bold mt-4">{t("social")}</h2>
+        <ul className="flex gap-6 mt-4">
           {sozialLinks.map(({ name, href, lucide_id }) => (
             <li
               key={name}

@@ -1,5 +1,5 @@
-"use client";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import heroLogo from "@public/images/rose.png";
 import { NavButton } from "./navButton";
@@ -14,6 +14,7 @@ const navLinks = [
   { label: "Contact", href: "#contact", lucide_id: "phone" },
 ];
 export const Hero = () => {
+  const t = useTranslations("Hero");
   return (
     <section
       id="hero"
@@ -22,7 +23,7 @@ export const Hero = () => {
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
         <Image src={heroLogo} alt="logo" fill objectFit="contain" />
       </div>
-      <p className="font-bold text-lg text-udh_yellow">WALK INS WECOME !</p>
+      <p className="font-bold text-lg text-udh_yellow">{t("welcome")}</p>
       <div className="w-full flex-1 flex flex-col items-center justify-center">
         <nav>
           <ul className="flex justify-center gap-6">

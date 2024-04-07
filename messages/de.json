@@ -1,5 +1,29 @@
 {
-  "Index": {
-    "title": "Bonjour world!"
+  "Hero": {
+    "welcome": "WALK INS WELCOME !"
+  },
+  "After": {
+    "title": "After Care",
+    "second_skin": {
+      "title": "Second Skin",
+      "description": "Second Skin ist ein atmungsaktives Pflaster und besonders Benutzerfreundlich. Du brauchst nichts weiter zu tun als das Pflaster 3-4 Tage auf dem Tattoo zu lassen. Du kannst damit sogar unter die Dusche gehen, ohne das es sich löst. (Achtung: zu lange und zu heiß Duschen oder Baden könnte das Pflaster lösen.)<br/> Es ist normal das sich Farbe und Wundwasser unter dem Pflaster in Blasen sammeln, keine Panik, die verschwinden von alleine.<br/> Am vierten Tag solltest du deine zweite Haut dann abziehen. Das geht oft ziemlich schwer und kann etwas unangenehm sein. <br/> Danach müsst ihr nur noch gelegentlich eine Pflege-Creme eurer Wahl auftragen. Hier gilt: weniger ist mehr. Benutzt die Creme nur als Unterstützung gegen die Spannung und das Jucken der Haut. Nach 2-3 Wochen ist alles überstanden. Auf Sport, Sauna oder Schwimmbad solltet ihr mindestens eine Woche verzichten."
+    },
+    "cling_film": {
+      "title": "Frischhaltefolie",
+      "description": "Besonders große Tätowierungen können oft nicht mit Second Skin versorgt werden. In diesem Fall wird eure Tätowierung mit Frischhaltefolie abgedeckt. Lasst diese bis zum Abend einfach drauf. Hattet ihr einen Termin am Nachmittag könnt ihr die erste Folie auch direkt über Nacht drauf lassen. Spätestens am nächste Morgen nach eurem Termin müsst ihr die Folie dann wechseln. Packt das Tattoo aus und wascht es gründlich ab, auch Seife darf benutzt werden. Lasst das Tattoo danach am besten noch eine Zeit lang an der Luft. Bevor ihr euch aber wieder anzieht müsst ihr eine neue Lage Frischhaltefolie darüber legen.<br/> Diesen Vorgang wiederholt ihr nun morgens und Abends für die nächsten 3-4 Tage. Danach müsst ihr nur noch gelegentlich eine Pflege-Creme eurer Wahl auftragen. Hier gilt: weniger ist mehr. Benutzt die Creme nur als Unterstützung gegen die Spannung und das Jucken der Haut. Nach 2-3 Wochen ist alles überstanden. Auf Sport, Sauna oder Schwimmbad solltet ihr mindestens eine Woche verzichten."
+    }
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "address": "Adresse",
+    "phone": "Telefon",
+    "email": "E-Mail"
+  },
+  "Info": {
+    "disclaimer": "Oft länger, manchmal früher. Am besten einfach anrufen!",
+    "opening_hours": "Öffnungszeiten",
+    "opening_times": "Mo - Sa 12:00 bis 18:00",
+    "title": "Info",
+    "social": "Social Media"
   }
 }
