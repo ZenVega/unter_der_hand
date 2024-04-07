@@ -5,7 +5,7 @@ export const AfterSection = () => {
   const locale = useLocale();
   console.log("LOCALE", locale);
   return (
-    <section id="after" className="w-full max-w-3xl">
+    <section id="after" className="w-full max-w-3xl mt-8">
       <div className="w-full">
         <div className="flex justify-between pb-4">
           <h2 className="font-bold text-udh_yellow">{t("title")}</h2>

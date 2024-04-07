@@ -1,4 +1,3 @@
-import { NextIntlClientProvider, useMessages } from "next-intl";
 import { AfterSection } from "@/components/afterSection";
 import { ContactSection } from "@/components/contactSection";
 import { InfoSection } from "@/components/infoSection";

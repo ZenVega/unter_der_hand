@@ -23,6 +23,9 @@ export const InfoSection = () => {
   const t = useTranslations("Info");
   return (
     <section id="opening" className="w-full max-w-3xl">
+      <div className="flex justify-between pb-4">
+        <h2 className="font-bold text-udh_yellow">{t("title")}</h2>
+      </div>
       <div className="bg-udh_yellow text-udh_dark_green p-4 sm:p-8 w-full">
         <h2 className="font-bold">{t("opening_hours")}</h2>
         <p>{t("opening_times")}</p>
@@ -32,10 +35,10 @@ export const InfoSection = () => {
           {sozialLinks.map(({ name, href, lucide_id }) => (
             <li
               key={name}
-              className="bg-udh_orange w-10 h-10 rounded-full flex items-center justify-center"
+              className="bg-udh_dark_green w-10 h-10 rounded-full flex items-center justify-center"
             >
               <a href={href} target="_blanc">
-                <Icon name={lucide_id} color={colors["udh_dark_green"]} />
+                <Icon name={lucide_id} color={colors["udh_yellow"]} />
               </a>
             </li>
           ))}

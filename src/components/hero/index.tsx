@@ -6,6 +6,7 @@ import { NavButton } from "./navButton";
 import { Icon, IconProps } from "../icon";
 import { colors } from "@/utils/colors";
 import useHeroInView from "@/utils/hooks/useHeroInView";
+import LanguageToggle from "../languageToggle";
 
 const navLinks = [
   { label: "Opening Hours", href: "#opening", lucide_id: "bug" },
@@ -20,6 +21,7 @@ export const Hero = () => {
       id="hero"
       className="w-full h-screen flex flex-col gap-4 items-center justify-center py-16 px-8"
     >
+      <LanguageToggle />
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
         <Image src={heroLogo} alt="logo" fill objectFit="contain" />
       </div>
