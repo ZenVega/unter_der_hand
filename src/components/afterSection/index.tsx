@@ -1,9 +1,7 @@
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 
 export const AfterSection = () => {
   const t = useTranslations("After");
-  const locale = useLocale();
-  console.log("LOCALE", locale);
   return (
     <section id="after" className="w-full max-w-3xl mt-8">
       <div className="w-full">
