@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://acme.com'),
+  metadataBase: new URL('https://netlify.app'),
   title: "Unter der Hand",
   description: "Tattoo's im Herzen Neuköllns",
   keywords: ['Tattoo', 'Walk Ins', 'Neukölln'],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    images: '/src/public/images/rose.png',
+    images: 'rose.png',
   },
 };
 
