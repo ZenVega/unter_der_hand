@@ -1,6 +1,5 @@
 import { useTranslations } from "next-intl";
 import { Icon } from "../icon";
-import { MapComponent } from "./map";
 
 export const ContactSection = () => {
   const t = useTranslations("Contact");
@@ -18,7 +17,6 @@ export const ContactSection = () => {
           google maps <Icon name="map" color="#1c4441" size={20} />
         </a>
       </div>
-      <MapComponent />
     </section>
   );
 };
