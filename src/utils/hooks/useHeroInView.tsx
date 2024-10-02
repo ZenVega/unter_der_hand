@@ -5,9 +5,9 @@ const useHeroInView = () => {
 
   useEffect(() => {
     const options = {
-      root: document.querySelector("main"),
+      root: null,
       rootMargin: "0px",
-      threshold: 0,
+      threshold: 0.5,
     };
 
     const observer = new IntersectionObserver(([entry]) => {

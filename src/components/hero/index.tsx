@@ -3,9 +3,7 @@ import { useTranslations } from "next-intl";
 
 import heroLogo from "@public/images/rose.png";
 import { NavButton } from "./navButton";
-import { Icon, IconProps } from "../icon";
-import { colors } from "@/utils/colors";
-import useHeroInView from "@/utils/hooks/useHeroInView";
+import { IconProps } from "../icon";
 import LanguageToggle from "../languageToggle";
 
 const navLinks = [
@@ -23,7 +21,7 @@ export const Hero = () => {
     >
       <LanguageToggle />
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
-        <Image src={heroLogo} alt="logo" fill objectFit="contain" />
+        <Image src={heroLogo} alt="logo" width={2480} height={3508} style={{ objectFit: "cover", width: "auto", height: "70%" }} priority={true}></Image>
       </div>
       <p className="font-bold text-lg text-udh_yellow">{t("welcome")}</p>
       <div className="w-full flex-1 flex flex-col items-center justify-center">
@@ -40,12 +38,6 @@ export const Hero = () => {
           </ul>
         </nav>
       </div>
-      <a
-        href="#hero"
-        className="block fixed bottom-8 z-20 right-8 flex justify-center gap-2 bg-udh_yellow text-udh_dark_green border border-2 border-udh_dark_green px-2 rounded-lg"
-      >
-        <Icon name="chevron-up" color={colors["udh_dark_green"]} />
-      </a>
     </section>
   );
 };

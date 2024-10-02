@@ -14,8 +14,7 @@
     "next-intl": "^3.11.1",
     "node-fetch": "^3.3.2",
     "react": "^18",
-    "react-dom": "^18",
-    "react-map-gl": "^7.0.21"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
