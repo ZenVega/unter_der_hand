@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import heroLogoLarge from "@public/images/hero-large.png";
+import heroLogoMedium from "@public/images/hero-medium.png";
+import heroLogoSmall from "@public/images/hero-small.png";
 
-import heroLogo from "@public/images/rose.png";
 import { NavButton } from "./navButton";
 import { IconProps } from "../icon";
 import LanguageToggle from "../languageToggle";
@@ -21,7 +23,13 @@ export const Hero = () => {
     >
       <LanguageToggle />
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
-        <Image src={heroLogo} alt="logo" width={2480} height={3508} style={{ objectFit: "cover", width: "auto", height: "70%" }} priority={true}></Image>
+        <Image 
+          src={heroLogoMedium}
+          alt="logo" 
+          width={2480} 
+          height={3508}
+          priority={true}
+          style={{ objectFit: "cover", width: "auto", height: "85%" }} ></Image>
       </div>
       <p className="font-bold text-lg text-udh_yellow">{t("welcome")}</p>
       <div className="w-full flex-1 flex flex-col items-center justify-center">
