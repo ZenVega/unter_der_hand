@@ -25,5 +25,8 @@
     "opening_times": "Mo - Sa 12am - 8pm",
     "title": "Info",
     "social": "Social Media"
+  },
+  "Gallery": {
+    "title": "Gallery"
   }
 }
