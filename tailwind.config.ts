@@ -15,6 +15,7 @@ const config: Config = {
       udh_orange: "#f6c193",
       udh_pink: "#f1bfc4",
       udh_yellow: "#ebd189",
+      transparent_white: "#FFFFFF66"
     },
     screens: {
       'md+': '876px',
@@ -28,6 +29,9 @@ const config: Config = {
         "2": "2 2 0%",
         "3": "3 3 0%",
       },
+      maxHeight: {
+        "4xl": "56rem"
+      }
     },
   },
   plugins: [],

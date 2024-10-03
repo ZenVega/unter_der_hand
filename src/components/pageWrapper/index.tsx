@@ -26,7 +26,7 @@ const PageWrapper = ({ children }: props) => {
     <div className="max-w-5xl m-auto">
         <a
           href="#hero"
-          className={`fixed bottom-8 z-20 right-8 flex min-w-10 max-h-6 justify-center gap-2 bg-udh_yellow text-udh_dark_green border border-2 border-udh_dark_green px-2 rounded-lg transition-opacity duration-300 ${
+          className={`fixed bottom-8 z-10 right-8 flex min-w-10 max-h-6 justify-center gap-2 bg-udh_yellow text-udh_dark_green border border-2 border-udh_dark_green px-2 rounded-md transition-opacity duration-300 ${
             showScrollTop ? "opacity-100 " : "opacity-0"
           }`}
         >
