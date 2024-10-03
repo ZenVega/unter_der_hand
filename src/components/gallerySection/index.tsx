@@ -17,9 +17,9 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
     <section id="gallery" className="w-full max-w-3xl mt-8">
       <div className="bg-udh_yellow text-udh_dark_green p-8">
         <h2 className="font-bold">{t("title")}</h2>
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap w-full justify-between">
           {posts && posts.map(post => (
-            <div key={post.id} className="flex-shrink-0" style={{ minWidth: '340px', maxWidth: 'calc(33.33% - 1rem)' }}>
+            <div key={post.id} className="flex-shrink-0 md+:min-w-84 min-w-full mb-8 overflow-hidden aspect-square flex items-center justify-center">
               <Image 
                 alt="Tattoo" 
                 src={post.sizes.medium.mediaUrl} 

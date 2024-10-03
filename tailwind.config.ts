@@ -16,9 +16,13 @@ const config: Config = {
       udh_pink: "#f1bfc4",
       udh_yellow: "#ebd189",
     },
+    screens: {
+      'md+': '876px',
+    },
     extend: {
       spacing: {
         "1/2": "50%",
+        "84": "21rem"
       },
       flex: {
         "2": "2 2 0%",

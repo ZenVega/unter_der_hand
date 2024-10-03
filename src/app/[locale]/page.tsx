@@ -17,8 +17,8 @@ export default async function Home() {
           {/* In case we need translation on a client side component, we can use this */}
           <Hero />
           <InfoSection />
-          <AfterSection />
           <ContactSection />
+          <AfterSection />
           <GallerySection feedURL={feedURL as string} />
         </NextIntlClientProvider>
       </PageWrapper>
