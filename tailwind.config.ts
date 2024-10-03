@@ -22,7 +22,7 @@ const config: Config = {
     extend: {
       spacing: {
         "1/2": "50%",
-        "84": "21rem"
+        "88": "22.5rem"
       },
       flex: {
         "2": "2 2 0%",
