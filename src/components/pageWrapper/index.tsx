@@ -30,7 +30,7 @@ const PageWrapper = ({ children }: props) => {
             showScrollTop ? "opacity-100 " : "opacity-0"
           }`}
         >
-          <span className="text-xl font-bold">^</span>
+          <span className="text-md">&#8963;</span>
         </a>
     {children}</div>);
 };

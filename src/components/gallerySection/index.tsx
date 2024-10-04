@@ -36,7 +36,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
               onClick={() => openSlider(post.id)}
             >
               <Image 
-                alt="Tattoo" 
+                alt="Instagram Image or Thumbnail" 
                 src={post.sizes.medium.mediaUrl} 
                 layout="responsive"
                 width={340}

@@ -9,10 +9,10 @@ import { IconProps } from "../icon";
 import LanguageToggle from "../languageToggle";
 
 const navLinks = [
-  { label: "Opening Hours", href: "#opening", lucide_id: "bug" },
-  { label: "After Care", href: "#after", lucide_id: "target" },
-  { label: "Social Media", href: "#social", lucide_id: "banana" },
+  { label: "Opening Hours", href: "#opening", lucide_id: "radio-tower" },
   { label: "Contact", href: "#contact", lucide_id: "phone" },
+  { label: "After Care", href: "#after", lucide_id: "heart-pulse" },
+  { label: "Social Media", href: "#gallery", lucide_id: "scan-eye" },
 ];
 export const Hero = () => {
   const t = useTranslations("Hero");
