@@ -31,7 +31,7 @@ export const InfoSection = () => {
         <p>{t("opening_times")}</p>
         <p>{t("disclaimer")}</p>
         <h2 className="font-bold mt-4">{t("social")}</h2>
-        <ul className="flex gap-6 mt-4">
+        <ul className="flex gap-6 mt-2">
           {sozialLinks.map(({ name, href, lucide_id }) => (
             <li
               key={name}

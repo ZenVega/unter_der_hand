@@ -10,12 +10,11 @@ const useGetInstaFeed = (feedURL:string) => {
 
   const fetchFeed = async () => {
     try {
-      console.log("FEEDURL", feedURL)
       const rawFeed = await fetch(feedURL as string, {
         signal: controller.signal,
       });
 
-      console.log("Response received:", rawFeed);
+      console.log("Response received");
 
       // Pass HTTP errors to the catch block
       if (!rawFeed.ok) {
@@ -26,7 +25,6 @@ const useGetInstaFeed = (feedURL:string) => {
 
       // Parse JSON
       const feedJSON: Behold.Feed = await rawFeed.json();
-      console.log("Feed JSON:", feedJSON);
 
       // Update state with fetched posts
       setPosts(feedJSON.posts);

@@ -27,7 +27,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
   return (
     <section id="gallery" className="w-full max-w-3xl mt-8">
       <div className="bg-udh_yellow text-udh_dark_green p-4">
-        <h2 className="font-bold pb-4">{t("title")}</h2>
+        <h2 className="font-bold pb-2">{t("title")}</h2>
         <div className="flex flex-wrap w-full justify-between">
           {posts && posts.map(post => (
             <div 
