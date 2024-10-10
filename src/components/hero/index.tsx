@@ -21,17 +21,20 @@ export const Hero = () => {
 
   useEffect(() => {
     const updateHeight = () => {
-      setWindowHeight(window.innerHeight);
+      if (windowHeight == 0){
+        console.log("resize");
+        setWindowHeight(window.innerHeight);
+      }
     };
     updateHeight();
     window.addEventListener('resize', updateHeight);
     return () => window.removeEventListener('resize', updateHeight);
-  }, []);
+  }, [windowHeight]);
 
   return (
     <section
       id="hero"
-      className="w-full h-full flex flex-col gap-4 items-center justify-center py-16 px-8"
+      className="w-full flex flex-col gap-4 items-center justify-center py-16 px-8"
       style={windowHeight > 0 ? { "height": `${windowHeight}px` } : { "height": "100vh" }}
     >
       <LanguageToggle />
