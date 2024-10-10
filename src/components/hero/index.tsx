@@ -1,14 +1,13 @@
 "use client"
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import heroLogoLarge from "@public/images/hero-large.png";
 import heroLogoMedium from "@public/images/hero-medium.png";
 import heroLogoSmall from "@public/images/hero-small.png";
 
 import { NavButton } from "./navButton";
 import { IconProps } from "../icon";
 import LanguageToggle from "../languageToggle";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const navLinks = [
   { label: "Opening Hours", href: "#opening", lucide_id: "radio-tower" },
@@ -17,8 +16,14 @@ const navLinks = [
   { label: "Social Media", href: "#gallery", lucide_id: "scan-eye" },
 ];
 export const Hero = () => {
-  const [windowheight] = useState(window.innerHeight);
+  const [windowHeight, setWindowHeight] = useState(0);
   const t = useTranslations("Hero");
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowHeight(window.innerHeight);
+    }
+  }, []);
   return (
     <section
       id="hero"
@@ -28,7 +33,7 @@ export const Hero = () => {
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
         <Image 
           src={
-            windowheight > 877 
+            windowHeight > 877 
             ? heroLogoMedium 
             : heroLogoSmall}
           alt="logo" 

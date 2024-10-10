@@ -4,7 +4,7 @@ import useGetInstaFeed from "@/utils/hooks/useGetInstaFeed";
 import Image from "next/image";
 import { Icon } from "@components/icon";
 import { LargeImageSlider } from "./largeImageSlider";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Post } from "@behold/types"
 
 interface GallerySectionProps {
@@ -16,7 +16,13 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
   const { posts, error } = useGetInstaFeed(feedURL);
   const [sliderOpen, setSliderOpen] = useState<boolean>(false);
   const [currentPost, setCurrentPost] = useState<Post | undefined>(undefined);
-  const [windowWidth] = useState(window.innerWidth);
+  const [windowWidth, setWindowWidth] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      setWindowWidth(window.innerWidth);
+    }
+  }, []);
 
   const openSlider = (id: Post["id"] ) =>
   {
