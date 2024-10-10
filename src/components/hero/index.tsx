@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import heroLogoLarge from "@public/images/hero-large.png";
@@ -7,6 +8,7 @@ import heroLogoSmall from "@public/images/hero-small.png";
 import { NavButton } from "./navButton";
 import { IconProps } from "../icon";
 import LanguageToggle from "../languageToggle";
+import { useState } from "react";
 
 const navLinks = [
   { label: "Opening Hours", href: "#opening", lucide_id: "radio-tower" },
@@ -15,6 +17,7 @@ const navLinks = [
   { label: "Social Media", href: "#gallery", lucide_id: "scan-eye" },
 ];
 export const Hero = () => {
+  const [windowheight] = useState(window.innerHeight);
   const t = useTranslations("Hero");
   return (
     <section
@@ -24,7 +27,10 @@ export const Hero = () => {
       <LanguageToggle />
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
         <Image 
-          src={heroLogoMedium}
+          src={
+            windowheight > 877 
+            ? heroLogoMedium 
+            : heroLogoSmall}
           alt="logo" 
           width={2480} 
           height={3508}

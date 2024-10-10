@@ -19,6 +19,7 @@ const config: Config = {
     },
     screens: {
       'md+': '876px',
+      'xs': '380px'
     },
     extend: {
       spacing: {

@@ -7,8 +7,10 @@ export const ContactSection = () => {
     <section id="contact" className="w-full max-w-3xl mt-8">
       <div className="bg-udh_yellow text-udh_dark_green p-4">
         <h2 className="font-bold">{t("title")}</h2>
-        <p>{t("email")}: udh@something.com</p>
-        <p>{t("phone")}: 1234567890</p>
+        <a
+          href="mailto:unterderhandberlin@gmail.com"
+        >{t("email")}: unterderhandberlin@gmail.com</a>
+        <p>{t("phone")}: 030 92357356 | <br className="block xs:hidden"/>0152 24548668</p>
         <a
           href="https://maps.app.goo.gl/H1xAwxwHXcrz7bzH9"
           className="flex gap-2"

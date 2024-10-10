@@ -16,6 +16,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
   const { posts, error } = useGetInstaFeed(feedURL);
   const [sliderOpen, setSliderOpen] = useState<boolean>(false);
   const [currentPost, setCurrentPost] = useState<Post | undefined>(undefined);
+  const [windowWidth] = useState(window.innerWidth);
 
   const openSlider = (id: Post["id"] ) =>
   {
@@ -37,7 +38,10 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
             >
               <Image 
                 alt="Instagram Image or Thumbnail" 
-                src={post.sizes.medium.mediaUrl} 
+                src={
+                  windowWidth > 875 || windowWidth < 480 
+                  ? post.sizes.small.mediaUrl 
+                  : post.sizes.medium.mediaUrl} 
                 layout="responsive"
                 width={340}
                 height={340}
