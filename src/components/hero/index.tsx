@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import heroLogoMedium from "@public/images/hero-medium.png";
 import heroLogoSmall from "@public/images/hero-small.png";
+import heroLogoXtraSmall from "@public/images/hero-xtra-small.png";
 
 import { NavButton } from "./navButton";
 import { IconProps } from "../icon";
@@ -41,9 +42,12 @@ export const Hero = () => {
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
         <Image 
           src={
-            windowHeight > 877 
+            windowHeight > 1200
             ? heroLogoMedium 
-            : heroLogoSmall}
+            : windowHeight > 820 
+            ? heroLogoSmall
+            : heroLogoXtraSmall
+          }
           alt="logo" 
           width={2480} 
           height={3508}
