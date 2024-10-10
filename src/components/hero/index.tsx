@@ -20,14 +20,19 @@ export const Hero = () => {
   const t = useTranslations("Hero");
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
+    const updateHeight = () => {
       setWindowHeight(window.innerHeight);
-    }
+    };
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
   }, []);
+
   return (
     <section
       id="hero"
-      className="w-full h-screen flex flex-col gap-4 items-center justify-center py-16 px-8"
+      className="w-full h-full flex flex-col gap-4 items-center justify-center py-16 px-8"
+      style={windowHeight > 0 ? { "height": `${windowHeight}px` } : { "height": "100vh" }}
     >
       <LanguageToggle />
       <div className="relative block flex justify-center flex-4 items-center w-full h-full">
