@@ -49,6 +49,7 @@ export const GallerySection: React.FC<GallerySectionProps> = ({ feedURL }) => {
                   ? post.sizes.small.mediaUrl 
                   : post.sizes.medium.mediaUrl} 
                 layout="responsive"
+                loading="lazy"
                 width={340}
                 height={340}
                 className="object-cover"

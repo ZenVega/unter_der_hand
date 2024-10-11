@@ -23,7 +23,6 @@ export const Hero = () => {
   useEffect(() => {
     const updateHeight = () => {
       if (windowHeight == 0){
-        console.log("resize");
         setWindowHeight(window.innerHeight);
       }
     };
@@ -31,6 +30,7 @@ export const Hero = () => {
     window.addEventListener('resize', updateHeight);
     return () => window.removeEventListener('resize', updateHeight);
   }, [windowHeight]);
+
 
   return (
     <section
@@ -49,8 +49,8 @@ export const Hero = () => {
             : heroLogoXtraSmall
           }
           alt="logo" 
-          width={2480} 
-          height={3508}
+          width={620} 
+          height={877}
           priority={true}
           style={{ objectFit: "cover", width: "auto", height: "85%" }} ></Image>
       </div>
