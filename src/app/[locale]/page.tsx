@@ -14,12 +14,11 @@ export default async function Home() {
     <main className="flex min-h-screen w-full items-center gap-8 justify-between bg-udh_green px-4 sm:px-16 pb-16">
       <PageWrapper>
         <NextIntlClientProvider messages={messages}>
-          {/* In case we need translation on a client side component, we can use this */}
           <Hero />
           <InfoSection />
           <ContactSection />
-          <AfterSection />
           <GallerySection feedURL={feedURL as string} />
+          <AfterSection />
         </NextIntlClientProvider>
       </PageWrapper>
     </main>

@@ -13,8 +13,8 @@ import { useEffect, useState } from "react";
 const navLinks = [
   { label: "Opening Hours", href: "#opening", lucide_id: "radio-tower" },
   { label: "Contact", href: "#contact", lucide_id: "phone" },
+  { label: "Gallery", href: "#gallery", lucide_id: "scan-eye" },
   { label: "After Care", href: "#after", lucide_id: "heart-pulse" },
-  { label: "Social Media", href: "#gallery", lucide_id: "scan-eye" },
 ];
 export const Hero = () => {
   const [windowHeight, setWindowHeight] = useState(0);
